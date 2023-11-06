@@ -1,0 +1,161 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    font-family: arial;
+    background: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    color:#000;
+}
+
+
+img{
+    max-width: 100%;
+    }
+
+a{
+    transition: all 0.5s ease-in-out;
+}
+
+
+.navbar{
+    padding: 5px 15px;
+    background:rgb(255, 255, 255);
+    position: fixed;
+    left:0%;
+    top:0;
+    width: 100%;
+    z-index: 200;
+}
+.navbar-brand img{
+    margin-left: 70px;
+    margin-right: 50px;
+    width: 100px;
+    display: block;
+}
+
+.nav-item a{
+    font-size: 20px;
+    color:000;
+    display: block;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-weight: 500;
+} 
+
+.nav-item a:hover{
+    color:#225EF3;
+}
+
+
+.hover-underline-animation {
+  position: relative;
+  color:#000;
+  text-decoration: none;
+  padding-bottom: 15px;
+
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 15px;
+  background-color: #225EF3;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+} 
+
+.welcome-section{
+    color: white;
+    background-color:#225EF3 ;
+    margin-top: 130px;
+    padding:20px 10px;
+    text-align: center;
+}
+
+
+
+/* services */
+
+.about-section{
+    padding-top:10px;
+}
+
+#regular-service h2{
+    margin-top: 80px;
+    font-size:26px;
+    position: relative;
+    font-weight: 400;
+    text-align: left;
+}
+
+#regular-service h2:hover{
+    color:#225EF3;
+}
+
+#regular-service figure {
+    padding:5px;
+    margin:0px;
+}
+#regular-service figure img{
+    height: 15vh;
+    width:500px;
+    margin-top: 0;
+    padding-left: 50px;
+    padding-top: 0;
+}
+
+#regular-service p{
+    text-align: left;
+    font-size: 17px;
+    
+}
+
+
+#regular-service-hover-underline-animation{
+  position: relative;
+  color:#225EF3;
+  text-decoration: none;
+}
+
+
+.about-section-hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 5px;
+  background-color: #225EF3;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.about-section-hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+} 
+
+footer{
+    padding:10px 30px ;
+    background: #225EF3 ;
+    color: #fff;
+    margin: 0 10px;
+}
